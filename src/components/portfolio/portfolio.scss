@@ -1,0 +1,65 @@
+.portfolio {
+  position: relative;
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 28px;
+    .progressBar {
+      height: 6px;
+      background-color: white;
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .wrapper {
+      height: 100%;
+      margin: auto;
+      max-width: 866px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      .imageContainer {
+        flex: 1;
+        height: 50%;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h2 {
+          font-size: 40px;
+        }
+        P {
+          color: gray;
+          font-size: 15px;
+        }
+        button {
+          background-color: orange;
+          border-radius: 10px;
+          width: 200px;
+          height: 50px;
+          cursor: pointer;
+          border: none;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
